@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: Lab 1b.ma
-//Last modified: Sun, Jan 28, 2024 02:32:37 PM
+//Last modified: Sun, Jan 28, 2024 02:44:53 PM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.4.1";
@@ -11,17 +11,17 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 22621)";
-fileInfo "UUID" "4238EC64-4F3D-9832-A5EA-52A10AB3D2FD";
+fileInfo "UUID" "33889025-48A2-EB8A-836E-489E43EEB7BE";
 createNode transform -s -n "persp";
 	rename -uid "A4980AF3-446F-FB16-1C24-42A0C0E6F181";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -14.996614299454308 13.98814860778549 31.316598081826637 ;
-	setAttr ".r" -type "double3" -11.738352730162612 -1107.7999999996462 0 ;
+	setAttr ".t" -type "double3" 4.904812424477786 16.205751573946365 35.595672106480222 ;
+	setAttr ".r" -type "double3" -18.938352730162777 -1074.1999999996403 1.1988452434198678e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "9C1A9662-40E2-9D1B-B5B3-91B560C275DF";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 34.916003536095985;
+	setAttr ".coi" 34.72794772805721;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -36,7 +36,7 @@ createNode camera -s -n "topShape" -p "top";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
 	setAttr ".coi" 1000.1;
-	setAttr ".ow" 23.344047738672124;
+	setAttr ".ow" 20.354879725850811;
 	setAttr ".imn" -type "string" "top";
 	setAttr ".den" -type "string" "top_depth";
 	setAttr ".man" -type "string" "top_mask";
@@ -46,13 +46,13 @@ createNode camera -s -n "topShape" -p "top";
 createNode transform -s -n "front";
 	rename -uid "A127F9B9-4776-14FF-C1EF-7E905FE9BB58";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -0.64748201438848874 3.8848920863309342 1000.1 ;
+	setAttr ".t" -type "double3" 0.7097061279706991 5.0311658552153835 1000.1 ;
 createNode camera -s -n "frontShape" -p "front";
 	rename -uid "BF9DB3B4-4A61-CE48-8D3A-17A1933D622D";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
 	setAttr ".coi" 1000.1;
-	setAttr ".ow" 30.253968704264754;
+	setAttr ".ow" 23.09862572399803;
 	setAttr ".imn" -type "string" "front";
 	setAttr ".den" -type "string" "front_depth";
 	setAttr ".man" -type "string" "front_mask";
@@ -1645,7 +1645,7 @@ createNode shadingEngine -n "lambert5SG";
 createNode materialInfo -n "materialInfo4";
 	rename -uid "737B269D-4D5A-085A-C099-A68DE240F065";
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "E8639DAB-4AD5-E012-DE95-97ACC292709A";
+	rename -uid "9203F6AB-4292-7E2F-D95C-83B936A04E73";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
