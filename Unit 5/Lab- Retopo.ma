@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: Lab- Retopo.ma
-//Last modified: Wed, Feb 28, 2024 04:06:23 PM
+//Last modified: Wed, Feb 28, 2024 04:14:08 PM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.4.1";
@@ -11,12 +11,12 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 22621)";
-fileInfo "UUID" "204536FA-45FF-1A85-6AB4-288DE0048F18";
+fileInfo "UUID" "5CC96C92-46C0-649F-4060-ACA19DA6E1A3";
 createNode transform -s -n "persp";
 	rename -uid "2F96C5CC-CF48-3364-978F-BF80661D753F";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -14.801244693386318 1.4224425632805282 -2.9773701780289219 ;
-	setAttr ".r" -type "double3" 8.6616473850939464 -2266.1999999988507 0 ;
+	setAttr ".t" -type "double3" -15.032248214387831 5.2192732900492018 -2.4965850012919706 ;
+	setAttr ".r" -type "double3" -5.7383526145618866 -2264.1999999986147 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "F7E47E0A-8A46-F757-7132-5EBE985BE8D9";
 	setAttr -k off ".v" no;
@@ -2436,7 +2436,7 @@ createNode groupId -n "groupId1";
 	rename -uid "BF86F5CD-463D-C41D-03E3-4FBA3BD329D9";
 	setAttr ".ihi" 0;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "DECF5630-4C3C-C6F3-A975-379466B139D2";
+	rename -uid "31AB7880-4E64-B936-8988-E0A60E43FADF";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
